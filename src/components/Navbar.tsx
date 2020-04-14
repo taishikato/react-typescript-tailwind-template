@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import IsLoginContext from '../contexts/IsLoginContext'
+import LoginUserContext from '../contexts/LoginUserContext'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -8,6 +10,8 @@ const Navbar = () => {
     picture: 'https://jp.taishikato.com/photo.jpg',
     name: 'Taishi',
   }
+  // const isLogin = useContext(IsLoginContext)
+  // const loginUser = useContext(LoginUserContext)
   return (
     <nav
       style={{ boxShadow: '0px 6px 20px rgba(0, 0, 0, 0.06)' }}
